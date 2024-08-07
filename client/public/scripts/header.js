@@ -1,0 +1,1 @@
+//Contain all JS code to add elements to the <header> element

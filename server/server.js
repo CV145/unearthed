@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.status(200).send('<h1 style="text-align: center; margin-top: 50px;">UnEarthed API</h1>')
 })
 
-//use this endpoint
+//use this endpoint, uses the router from gifts.js
 app.use('/gifts', giftsRouter)
 
 const PORT = process.env.PORT || 3001;
