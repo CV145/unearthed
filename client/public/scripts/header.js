@@ -23,7 +23,7 @@ headerRight.className = 'header-right';
 
 //img element
 const logoImg = document.createElement('img');
-logoImg.src = 'logo.png';
+logoImg.src = '/logo.png';
 logoImg.alt = 'Logo';
 
 const h1 = document.createElement('h1');

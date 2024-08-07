@@ -1,0 +1,279 @@
+/* Root Styles CSS */
+:root {
+  /* Sets the background color of the document to white */
+  background-color: white;
+  /* Sets the default font family to Avenir, Helvetica, or sans-serif as fallback */
+  font-family: Avenir, Helvetica, sans-serif;
+  /* Sets the default text color to black */
+  color: black;
+}
+
+/* Header CSS */
+.header-container {
+  /* Ensures no overflow content is shown */
+  overflow: hidden;
+  /* Adds padding: 20px top/bottom and 10px left/right */
+  padding: 20px 10px;
+  /* Adds 60px padding to the bottom */
+  padding-bottom: 60px;
+}
+
+.header-left {
+  /* Floats the element to the left */
+  float: left;
+  /* Sets the height to 100px */
+  height: 100px;
+  /* Sets the width to 310px */
+  width: 310px;
+}
+
+.header-left img {
+  /* Adds 8px padding to the top */
+  padding-top: 8px;
+  /* Sets the height to 80px */
+  height: 80px;
+}
+
+.header-left h1 {
+  /* Floats the element to the right */
+  float: right;
+  /* Sets the font size to 45px */
+  font-size: 45px;
+}
+
+.header-right {
+  /* Floats the element to the right */
+  float: right;
+  /* Adds 30px padding to the top */
+  padding-top: 30px;
+  /* Adds 10px padding to the right */
+  padding-right: 10px;
+}
+
+.header-right button {
+  /* Sets the background color to white */
+  background-color: white;
+  /* Adds a solid border */
+  border: solid;
+  /* Sets the border width to 3px */
+  border-width: 3px;
+  /* Sets the border color to rgb(3, 7, 89) */
+  border-color: rgb(3, 7, 89);
+  /* Sets the border radius to 16px for rounded corners */
+  border-radius: 16px;
+  /* Uses box-sizing: border-box to include padding and border in the element's total width and height */
+  box-sizing: border-box;
+  /* Sets the text color to rgb(3, 7, 89) */
+  color: rgb(3, 7, 89);
+  /* Changes cursor to pointer on hover */
+  cursor: pointer;
+  /* Adds 15px padding top/bottom and 16px padding left/right */
+  padding: 15px 16px;
+  /* Centers the text */
+  text-align: center;
+  /* Transforms text to uppercase */
+  text-transform: uppercase;
+  /* Ensures the button handles touch actions appropriately */
+  touch-action: manipulation;
+  /* Sets the width to 80px */
+  width: 80px;
+}
+
+/* Home page CSS */
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  background: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(3, 7, 89);
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
+  margin: 0px 40px 60px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bottom-container {
+  text-align: center;
+  padding: 10px;
+}
+
+.bottom-container h3 {
+  margin: 10px 0;
+}
+
+.bottom-container p {
+  margin: 5px 0;
+}
+
+.bottom-container a {
+  color: rgb(228, 16, 133);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border: 1px solid rgb(228, 16, 133);
+  border-radius: 5px;
+}
+
+
+.bottom-container h3 {
+  /* Adds 10px margin to the top */
+  margin-top: 10px;
+  /* Adds 6px margin to the bottom */
+  margin-bottom: 6px;
+}
+
+.bottom-container p {
+  /* Adds 2px margin on all sides */
+  margin: 2px;
+}
+
+.bottom-container a {
+  /* Sets the text color to rgb(228, 16, 133) */
+  color: rgb(228, 16, 133);
+  /* Removes underline from links */
+  text-decoration: none;
+}
+
+/* 404 Page CSS */
+.fof-container {
+  /* Uses table display to center content vertically */
+  display: table;
+  /* Sets width to 100% */
+  width: 100%;
+  /* Sets height to 100% of the viewport height */
+  height: 100vh;
+  /* Centers the text */
+  text-align: center;
+  /* Sets the text color to black */
+  color: black;
+}
+
+.fof {
+  /* Uses table-cell display to center content vertically */
+  display: table-cell;
+  /* Vertically aligns content to the middle */
+  vertical-align: middle;
+}
+
+.fof h1 {
+  /* Sets the text color to rgb(26, 25, 25) */
+  color: rgb(26, 25, 25);
+  /* Sets the font size to 50px */
+  font-size: 50px;
+  /* Makes the display inline-block */
+  display: inline-block;
+  /* Adds 12px padding to the right */
+  padding-right: 12px;
+  /* Adds typing animation */
+  animation: type .6s alternate infinite;
+}
+
+@keyframes type {
+  from {
+    /* Adds a shadow effect on the text */
+    box-shadow: inset -3px 0px 0px #888;
+  }
+
+  to {
+    /* Makes the shadow effect transparent */
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
+
+/* Detail Page CSS */
+.gift-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gift-details {
+  flex: 1;
+  text-align: left;
+}
+
+.gift-details h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #007bff;
+}
+
+.gift-details p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .gift-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-container {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .gift-details {
+    text-align: center;
+  }
+
+  .gift-details h2 {
+    font-size: 1.5rem;
+  }
+
+  .gift-details p {
+    font-size: 1rem;
+  }
+}
