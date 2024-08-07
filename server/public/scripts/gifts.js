@@ -66,4 +66,12 @@ const renderGifts = async () => {
 }
 
 const mainContent = document.getElementById('main-content');
-renderGifts();
+
+const requestedUrl = window.location.href.split('/').pop()
+
+if (requestedUrl) {
+    window.location.href = '../404.html'
+}
+else {
+    renderGifts();
+}
